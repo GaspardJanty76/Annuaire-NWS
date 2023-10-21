@@ -12,6 +12,7 @@
 </head>
 <body>
     <?php include ('methodes/getlines.php');?>
+    <?php include ('methodes/get.php');?>
     <nav class="c-navbar-light">
         <a class="logo" href="index.php"><img class="logonws" src="img/logo.png" alt=""></a>
         <a class="" href="index.php">Ajouter un contact</a>
@@ -19,25 +20,11 @@
         <a class="" href="lister.php">Lister les contacts</a>
     </nav>
     <div style="text-align: center;">
-        <p class=""><?php echo "nombre de contact(s) : " . $nombre_lignes; ?></p>
+
+        <p class=""><?php $nombreLignes = compterLignesEleves(); echo "nombre de contact(s) : " . $nombreLignes; ?></p>
     </div>
     
-    <form method="post">
-        <table class="border">
-            <thead>
-                <tr>
-                    <th>Nom</th>
-                    <th>Prénom</th>
-                    <th>Email</th>
-                    <th>Téléphone</th>
-                    <th>Spécialité</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php include ('methodes/get.php');?>
-            </tbody>
-        </table>
-    </form>
+    <?php listerEleves(); ?>
 
     <div class="bottom-decoration">
     <div class="red"></div>

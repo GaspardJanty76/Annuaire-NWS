@@ -38,6 +38,17 @@
             <br>
             <input type="submit" value="Ajouter un contact" />
         </form>
+        <?php if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    
+            $nom = $_POST["nom"];
+            $prenom = $_POST["prenom"];
+            $email = $_POST["email"];
+            $numero = $_POST["numero"];
+            $specialite = $_POST["spe"];
+
+
+            ajouterEleve($nom, $prenom, $email, $numero, $specialite);
+}       ?>
     </div>
 
 <div class="bottom-decoration">

@@ -1,8 +1,8 @@
 <?php
+include ('connexion.php');
+$connexion = connexionBdd();
 if (isset($_GET['id'])) {
     $idToDelete = $_GET['id'];
-
-    include('connexion.php');
 
     $sqlDelete = "UPDATE eleves SET suppression = 1 WHERE ideleves = $idToDelete";
 

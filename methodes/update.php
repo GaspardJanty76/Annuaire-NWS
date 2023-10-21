@@ -1,6 +1,7 @@
 <?php
 if (isset($_POST['modifier'])) {
     include('connexion.php');
+    $connexion = connexionBdd();
 
     $count = count($_POST['ideleves']);
 
@@ -17,18 +18,13 @@ if (isset($_POST['modifier'])) {
 
         if ($stmt) {
             $stmt->bind_param("sssssi", $nom, $prenom, $email, $tel, $specialite, $ideleves);
-
-            if ($stmt->execute()) {
-                echo "L'élève a été mis à jour avec succès.";
-            } else {
-                echo "Erreur lors de la mise à jour de l'élève : " . $stmt->error;
-            }
-
+            $stmt->execute();
             $stmt->close();
         } else {
             echo "Erreur de préparation de la requête : " . $connexion->error;
         }
     }
+    echo "L'élève a été mis à jour avec succès.";
 
     $connexion->close();
 }

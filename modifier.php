@@ -12,7 +12,7 @@
     <title>Inscription</title>
 </head>
 <body>
-
+    <?php include ('methodes/search.php');?>
     <nav class="c-navbar-light">
         <a class="logo" href="index.php"><img class="logonws" src="img/logo.png" alt=""></a>
         <a class="" href="index.php">Ajouter un contact</a>
@@ -27,7 +27,8 @@
     </form>
     <br>
     <br>
-    <?php include ('methodes/search.php');?>
+
+    <?php afficherResultatsRecherche();?>
 
 
 
