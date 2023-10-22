@@ -8,7 +8,7 @@ function ajouterEleve($nom, $prenom, $email, $numero, $specialite) {
 
     if ($connexion->query($sql) === TRUE) {
         
-        header("Location: lister.php");
+        header("Location: list.php");
         exit();
     } else {
         echo "Error: " . $sql . "<br>" . $connexion->error;
