@@ -61,12 +61,128 @@
     text-decoration: none;
     text-transform: uppercase;
     border: #E94A34;
-    border-radius: 50px; /* Ajoute un rayon de bord arrondi */
-    display: block; /* Assure que le bouton occupe toute la largeur de son conteneur */
-    margin: 0 auto; /* Centre le bouton horizontalement */
+    border-radius: 50px;
+    display: block;
+    margin: 0 auto;
 }
 
 .form-style-8 input[type="button"]:hover, 
 .form-style-8 input[type="submit"]:hover {
 	background-color : #bd2b18;
 }
+
+th{
+    background-color: #FEC800;
+}
+
+
+td {
+  text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+} 
+
+.search-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.search-box {
+    background-color: #f2f2f2f2;
+    padding: 15px;
+    border: 2px solid #d1d1d1f2;
+    border-radius: 20px;
+    outline: none;
+    width: 35%;
+}
+
+.search-button {
+    background-color: #0074cc;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+
+
+body{
+    font-family: 'sofia pro', sans-serif;
+    background-color: #F2F2F2;
+    margin: 0;
+}
+
+
+.c-navbar-light {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 35px 100px;
+    font-size: 25px;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+}
+
+
+.bottom-decoration {
+    position: fixed;
+    width: 100vw;
+    height: 10px;
+    bottom: 0;
+    z-index: 100;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.bottom-decoration .red {
+    background-color: var(--red);
+}
+
+.bottom-decoration .blue {
+    background-color: var(--blue);
+}
+
+.bottom-decoration .yellow {
+    background-color: var(--yellow);
+}
+
+.bottom-decoration div {
+    float: left;
+    width: calc(100%/3);
+    height: 100%;
+}
+
+:root {
+    --blue: #00a5a5;
+    --red: #dc3545;
+    --yellow: #fec800;
+}
+
+h1{
+    padding: 50%;
+}
+

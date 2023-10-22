@@ -1,4 +1,8 @@
 <?php
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 include ('connexion.php');
 $connexion = connexionBdd();
 if (isset($_GET['id'])) {
@@ -16,4 +20,10 @@ if (isset($_GET['id'])) {
 } else {
     echo "ID de l'élève non spécifié.";
 }
+header("Location:../success.php");
 $connexion->close();
+<<<<<<< Updated upstream
+=======
+
+?>
+>>>>>>> Stashed changes

@@ -1,7 +1,14 @@
 <?php
+<<<<<<< Updated upstream
 if (isset($_POST['modifier'])) {
     include('connexion.php');
     $connexion = connexionBdd();
+=======
+function modifierEleves() {
+    if (isset($_POST['modifier'])) {
+        include('connexion.php');
+        $connexion = connexionBdd();
+>>>>>>> Stashed changes
 
     $count = count($_POST['ideleves']);
 
@@ -23,9 +30,18 @@ if (isset($_POST['modifier'])) {
         } else {
             echo "Erreur de préparation de la requête : " . $connexion->error;
         }
+<<<<<<< Updated upstream
+=======
+        header("Location:../success.php");
+        $connexion->close();
+>>>>>>> Stashed changes
     }
     echo "L'élève a été mis à jour avec succès.";
 
+<<<<<<< Updated upstream
     $connexion->close();
 }
+=======
+
+>>>>>>> Stashed changes
 ?>
