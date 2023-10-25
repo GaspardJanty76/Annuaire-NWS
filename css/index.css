@@ -186,3 +186,44 @@ h1{
     padding: 50%;
 }
 
+.align {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+  
+.excel {
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.excel img{
+    width: 40px;
+    height: auto;
+}
+  
+.align form {
+    display: flex;
+    align-items: center;
+}
+  
+#triage {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+  
+input[type="submit"] {
+    background-color: #FEC800;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+  
+

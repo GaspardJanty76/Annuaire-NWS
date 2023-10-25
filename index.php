@@ -15,7 +15,6 @@
                     <option value="Ne sais pas encore">Ne sais pas encore</option>
                 </optgroup>
             <br>
-            <br>
             <input type="submit" value="Ajouter un contact" />
         </form>
         <?php if ($_SERVER["REQUEST_METHOD"] == "POST") {
