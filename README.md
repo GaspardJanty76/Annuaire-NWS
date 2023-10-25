@@ -1,8 +1,14 @@
 # Annuaire NWS
 
+
+## Le projet
+
 Premier Projet du mois à la NWS.
 
 Création d'un annuaire d'élèves pour les portes ouvertes de la NWS.
+
+
+## Descriptif de mon projet
 
 J'ai découpé mon programme en plusieurs parties :
 
