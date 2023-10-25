@@ -6,7 +6,7 @@ function afficherResultatsRecherche() {
         include('connexion.php');
         $connexion = connexionBdd();
 
-        $sql = "SELECT * FROM eleves WHERE nom LIKE '%$searchKeyword%' AND suppression = 0";
+        $sql = "SELECT * FROM eleves WHERE nom LIKE '%$searchKeyword%' AND suppression = 0 OR prenom LIKE '%$searchKeyword%'  AND suppression = 0";
         $result = $connexion->query($sql);
 
         if ($result->num_rows > 0) {
