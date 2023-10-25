@@ -20,6 +20,6 @@ on a ensuite une page secondaire qui permet d'afficher la reussite de la modifif
 
 on a ensuite un fichier templates qui réoertorie la navbar, le footer et les includes pour permettre de les appeler avec une seule ligne au lieu de les avoir sur toutes les pages.
 
-puis on a un fichier methodes conteant toutes mes fonctions php et ma configuration de base de données en Json.
+puis on a un fichier methodes conteant toutes mes fonctions php.
 
-et finalement on a un fichier img et un fichier css qui contiennent les images et le fichier css.
+et finalement on a un fichier img, un fichier json et un fichier css qui contiennent les images, le fichier json pour configurer la base de données et le fichier css.

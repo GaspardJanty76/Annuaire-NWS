@@ -1,7 +1,7 @@
 <?php
 function connexionBdd() {
 
-    $jsonFile = file_get_contents(__DIR__ .'/../methodes/config.json');
+    $jsonFile = file_get_contents(__DIR__ .'/../json/config.json');
     $config = json_decode($jsonFile);
     
     $connexion = new mysqli($config->host, $config->username, $config->password, $config->database);
